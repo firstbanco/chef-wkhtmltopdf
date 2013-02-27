@@ -5,7 +5,7 @@ binary_name = node[:wkhtmltopdf][:binary_name]
 case node['platform_family']
 when 'debian'
   packages = %w(libxrender1 libxext6 libfontconfig1)
-when 'redhat'
+when 'rhel'
   packages = %w(libXrender libXext urw-fonts openssl-devel fontconfig-devel)
 end
 
